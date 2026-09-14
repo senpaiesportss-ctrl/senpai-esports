@@ -1,29 +1,16 @@
-SENPAI ESPORTS — ADMIN CMS SETUP
+SENPAI ESPORTS — ADMIN CMS
 
-What this adds
-- /admin.html: password-protected Supabase admin panel
-- Roster, Teams, Tournaments, News, Owner & Contact, Hero/Site Settings
-- Public site reads the same content from Supabase, so saved changes can appear across devices
-- Owner photo included at assets/owner-aditya-sinha.jpg
+Admin URL: /admin.html
+Public URL: /
 
-One-time setup
-1. Create a free Supabase project.
-2. In Supabase > SQL Editor, run supabase-schema.sql.
-3. In Supabase > Authentication > Users, create your admin user (email + password).
-4. In Supabase > Project Settings > API, copy the Project URL and the Publishable/anon key.
-5. Copy supabase-config.js.example to supabase-config.js and replace the placeholders.
-6. Upload supabase-config.js, admin.html, admin.css, admin.js, supabase-schema.sql, default-content.json and the assets folder to GitHub/Vercel.
-7. Open /admin.html and sign in with the Supabase admin user.
-8. Edit content and click SAVE CHANGES.
+Supabase is configured in supabase-config.js using the browser-safe publishable key.
+Never add a Supabase service-role/secret key to this repository.
 
-Security
-- Do NOT use the Supabase service-role key in browser files.
-- The publishable/anon key is intended for browser use and is protected by RLS.
-- Keep the admin email/password private.
+One-time database setup:
+Run supabase-schema.sql in Supabase SQL Editor.
 
-Current contact details
-Email: senpaiesprotss@gmail.com
-Phone: 9693157295
-Owner: Aditya Sinha — Founder & Owner — Established 2023
+Admin login:
+Create the admin user in Supabase Authentication > Users.
 
-The current public HTML still contains fallback content, so the site remains functional before Supabase is configured. After configuration, the CMS becomes the source of truth for editable content.
+The public website reads site_content from Supabase. The admin panel writes to the same row.
+Changes made in the admin panel can therefore appear on the public site without editing HTML.
