@@ -9,6 +9,8 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="preloader" id="preloader"><div class="loader-mark"><img src="assets/senpai-logo.png" alt=""><span>INITIALIZING SENPAI</span></div><div class="loader-line"><i></i></div></div>
+<div class="scroll-progress"><i id="progressBar"></i></div>
 <div class="noise"></div>
 <div class="cursor-glow"></div>
 
@@ -19,6 +21,7 @@
     <a href="#about">About</a>
     <a href="#teams">Teams</a>
     <a href="#roster">Roster</a>
+    <a href="#achievements">Achievements</a>
     <a href="#tournaments">Tournaments</a>
     <a href="#news">News</a>
     <a href="#join">Join</a>
@@ -29,7 +32,7 @@
 
 <main>
 <section id="home" class="hero">
-  <div class="hero-grid"></div><div class="hero-glow"></div>
+  <div class="hero-grid"></div><div class="hero-glow"></div><div class="hero-particles" id="heroParticles" aria-hidden="true"></div><div class="hero-scan"></div><span class="hero-corner tl">// SENPAI / SYSTEM ONLINE</span><span class="hero-corner br">SCROLL / ENTER THE NEXT ERA</span>
   <div class="hero-copy reveal">
     <p class="eyebrow">DISCIPLINE <b>×</b> PASSION <b>×</b> VICTORY</p>
     <h1>WE ARE<br><em>SENPAI</em></h1>
@@ -71,44 +74,80 @@
 <section id="teams" class="section teams reveal">
   <div class="section-head"><div><div class="section-label">02 / OUR TEAMS</div><h2>DIFFERENT GAMES.<br><em>SAME MENTALITY.</em></h2></div><a class="text-link" href="#roster">VIEW ROSTER <span>→</span></a></div>
   <div class="team-grid">
-    <article class="team-card bgmi" data-game="BGMI"><span class="game">MOBILE</span><h3>BGMI</h3><p>COMPETITIVE</p><span class="card-arrow">↗</span></article><article class="team-card valorant" data-game="VALORANT"><span class="game">PC</span><h3>VALORANT</h3><p>COMING SOON</p><span class="card-arrow">↗</span></article><article class="team-card freefire" data-game="FREE FIRE"><span class="game">MOBILE</span><h3>FREE FIRE</h3><p>COMING SOON</p><span class="card-arrow">↗</span></article><article class="team-card creators" data-game="CREATORS"><span class="game">MEDIA</span><h3>CREATORS</h3><p>COMMUNITY</p><span class="card-arrow">↗</span></article>
+    <article class="team-card bgmi" data-game="BGMI" data-status="ACTIVE"><span class="team-index">01</span><span class="game">MOBILE / BATTLE ROYALE</span><div class="team-symbol">BG</div><h3>BGMI</h3><p>COMPETITIVE DIVISION</p><span class="card-arrow">↗</span><div class="team-status"><i></i> ACTIVE DIVISION</div></article>
+    <article class="team-card valorant" data-game="VALORANT" data-status="COMING SOON"><span class="team-index">02</span><span class="game">PC / TACTICAL FPS</span><div class="team-symbol">VA</div><h3>VALORANT</h3><p>COMING SOON</p><span class="card-arrow">↗</span><div class="team-status"><i></i> BUILDING THE LINE-UP</div></article>
+    <article class="team-card freefire" data-game="FREE FIRE" data-status="COMING SOON"><span class="team-index">03</span><span class="game">MOBILE / BATTLE ROYALE</span><div class="team-symbol">FF</div><h3>FREE FIRE</h3><p>COMING SOON</p><span class="card-arrow">↗</span><div class="team-status"><i></i> COMING SOON</div></article>
+    <article class="team-card creators" data-game="CREATORS" data-status="COMMUNITY"><span class="team-index">04</span><span class="game">MEDIA / COMMUNITY</span><div class="team-symbol">CR</div><h3>CREATORS</h3><p>COMMUNITY</p><span class="card-arrow">↗</span><div class="team-status"><i></i> CONTENT ERA</div></article>
   </div>
 </section>
 
 <section id="roster" class="section roster reveal">
-  <div class="section-head"><div><div class="section-label">03 / THE ROSTER</div><h2>MEET THE<br><em>SENPAI.</em></h2></div><span class="roster-note">OFFICIAL ROSTER / SEASON 01</span></div>
-  <div class="roster-shell">
-    <div class="roster-intro"><span class="vertical">SENPAI ESPORTS</span><div><p class="eyebrow">COMPETE AS ONE</p><p>Official player identities, roles, socials and achievements will live here. Replace the placeholders with the real roster whenever you're ready.</p></div></div>
-    <div class="player-grid">
-      <article class="player-card"><div class="player-art"><span>01</span><b>SE</b><i></i></div><div class="player-info"><small>BGMI / ROSTER</small><h3>PLAYER ONE</h3><p>IGL / LEADER</p><a href="#contact">PROFILE ↗</a></div></article><article class="player-card"><div class="player-art"><span>02</span><b>SE</b><i></i></div><div class="player-info"><small>BGMI / ROSTER</small><h3>PLAYER TWO</h3><p>ASSAULT / ENTRY</p><a href="#contact">PROFILE ↗</a></div></article><article class="player-card"><div class="player-art"><span>03</span><b>SE</b><i></i></div><div class="player-info"><small>BGMI / ROSTER</small><h3>PLAYER THREE</h3><p>SUPPORT / FLEX</p><a href="#contact">PROFILE ↗</a></div></article><article class="player-card"><div class="player-art"><span>04</span><b>SE</b><i></i></div><div class="player-info"><small>BGMI / ROSTER</small><h3>PLAYER FOUR</h3><p>ASSAULT / FRAGGER</p><a href="#contact">PROFILE ↗</a></div></article>
-    </div>
+  <div class="section-head"><div><div class="section-label">03 / THE ROSTER</div><h2>MEET THE<br><em>SENPAI.</em></h2></div><span class="roster-note">OFFICIAL ROSTER / COMING SOON</span></div>
+  <div class="coming-soon">
+    <div class="coming-orbit"><span>SE</span><i></i><b></b></div>
+    <div class="coming-copy"><p class="eyebrow">ROSTER REVEAL / 2026</p><h3>THE NEXT<br><em>LINE-UP.</em></h3><p>Official players, roles, stats and profiles will be revealed here. The roster is being built behind the scenes — stay locked in.</p><div class="coming-badges"><span>PLAYER REVEALS</span><span>TEAM STATS</span><span>PROFILES</span></div></div>
+  </div>
+</section>
+
+<section id="achievements" class="section achievements reveal">
+  <div class="section-head"><div><div class="section-label">04 / ACHIEVEMENTS</div><h2>BUILT TO<br><em>WIN.</em></h2></div><span class="roster-note">HALL OF FAME / UPDATING</span></div>
+  <div class="achievement-grid">
+    <article><span>01</span><strong>COMING<br>SOON</strong><small>TOURNAMENT WINS</small></article>
+    <article><span>02</span><strong>COMING<br>SOON</strong><small>TOP PLACEMENTS</small></article>
+    <article><span>03</span><strong>COMING<br>SOON</strong><small>MVP MOMENTS</small></article>
+    <article><span>04</span><strong>∞</strong><small>NEXT TARGET</small></article>
+  </div>
+</section>
+
+<section class="section philosophy reveal">
+  <div class="section-head"><div><div class="section-label">05 / THE SENPAI WAY</div><h2>ONE CODE.<br><em>NO EXCUSES.</em></h2></div><span class="roster-note">CORE VALUES / ALWAYS ON</span></div>
+  <div class="philosophy-grid">
+    <article class="philo"><span class="philo-num">01 / DISCIPLINE</span><h3>SHOW UP.</h3><p>Consistency beats hype. We build habits that survive pressure, losses and long seasons.</p></article>
+    <article class="philo"><span class="philo-num">02 / PASSION</span><h3>CARE MORE.</h3><p>Every match, clip and idea is another chance to raise the standard and make the community proud.</p></article>
+    <article class="philo"><span class="philo-num">03 / VICTORY</span><h3>KEEP MOVING.</h3><p>Winning is the target. Improvement is the lifestyle. The next level is always the next level.</p></article>
   </div>
 </section>
 
 <section id="tournaments" class="section tournaments reveal">
-  <div class="section-head"><div><div class="section-label">04 / COMPETE</div><h2>TOURNAMENT<br><em>HIGHLIGHTS.</em></h2></div><span class="roster-note">EVENT HUB / LIVE</span></div>
-  <div class="event-list">
-    <article class="event"><div class="event-num">01</div><div><small>UPCOMING</small><h3>SENPAI NEXT CUP</h3><p>Official tournament details will appear here.</p></div><span class="event-date">TBA</span></article>
-    <article class="event"><div class="event-num">02</div><div><small>RESULT</small><h3>SENPAI CHAMPIONSHIP</h3><p>Results, placements and match history.</p></div><span class="event-date">—</span></article>
-    <article class="event"><div class="event-num">03</div><div><small>UPCOMING</small><h3>SENPAI INVITATIONAL</h3><p>Build the next chapter.</p></div><span class="event-date">TBA</span></article>
+  <div class="section-head"><div><div class="section-label">05 / COMPETE</div><h2>TOURNAMENT<br><em>HIGHLIGHTS.</em></h2></div><span class="roster-note">EVENT HUB / LIVE</span></div>
+  <div class="event-hub">
+    <div class="event-feature">
+      <div class="event-feature-top"><span>01 / NEXT EVENT</span><b>COMING SOON</b></div>
+      <div class="event-bigmark">SE</div>
+      <div class="event-feature-copy"><small>TOURNAMENT SERIES / 001</small><h3>SENPAI<br><em>NEXT CUP.</em></h3><p>The first official Senpai tournament experience. Schedule, format, registrations and match details will be revealed here.</p><div class="event-meta"><span><i>DATE</i>TBA</span><span><i>FORMAT</i>TBA</span><span><i>STATUS</i>PREPARING</span></div></div>
+    </div>
+    <div class="event-timeline">
+      <article class="event event-live"><div class="event-num">01</div><div><small>UPCOMING / TBA</small><h4>SENPAI NEXT CUP</h4><p>Official tournament details will appear here.</p></div><span class="event-dot"></span></article>
+      <article class="event"><div class="event-num">02</div><div><small>RESULTS / COMING SOON</small><h4>SENPAI CHAMPIONSHIP</h4><p>Placements, match history and highlights.</p></div><span class="event-dot"></span></article>
+      <article class="event"><div class="event-num">03</div><div><small>INVITATIONAL / TBA</small><h4>SENPAI INVITATIONAL</h4><p>Build the next chapter.</p></div><span class="event-dot"></span></article>
+    </div>
   </div>
 </section>
 
 <section id="news" class="section news reveal">
-  <div class="section-label">05 / LATEST</div>
+  <div class="section-label">07 / LATEST</div>
   <div class="news-grid">
     <article class="news-main"><small>NEWS / 001</small><h2>THE NEXT ERA<br><em>STARTS NOW.</em></h2><p>Roster announcements, tournament updates, videos and major Senpai moments will appear here.</p><a class="btn ghost" href="#contact">FOLLOW SENPAI <span>→</span></a></article>
     <div class="news-side"><article><span>01</span><h3>ROSTER ANNOUNCEMENTS</h3><p>Official team updates.</p></article><article><span>02</span><h3>TOURNAMENT NEWS</h3><p>Schedules, results and wins.</p></article><article><span>03</span><h3>CONTENT DROPS</h3><p>Videos and community moments.</p></article></div>
   </div>
 </section>
 
+<section id="media" class="section media reveal">
+  <div class="section-head"><div><div class="section-label">06 / MEDIA</div><h2>WATCH.<br><em>FOLLOW. REPEAT.</em></h2></div><span class="roster-note">CONTENT HUB / COMING SOON</span></div>
+  <div class="media-grid">
+    <article class="media-feature"><div class="media-mark">▶</div><small>YOUTUBE / SENPAI ESPORTS</small><h3>CONTENT DROPS<br>START HERE.</h3><p>Match highlights, shorts, behind-the-scenes moments and the Senpai grind — all in one place.</p><a class="text-link" href="#contact">CHANNEL COMING SOON <span>↗</span></a></article>
+    <div class="media-links"><a href="#contact"><span>YT</span><div><strong>YOUTUBE</strong><small>HIGHLIGHTS / SHORTS</small></div><b>↗</b></a><a href="#contact"><span>IG</span><div><strong>INSTAGRAM</strong><small>DAILY UPDATES</small></div><b>↗</b></a><a href="#contact"><span>DC</span><div><strong>DISCORD</strong><small>COMMUNITY HUB</small></div><b>↗</b></a></div>
+  </div>
+</section>
+
 <section id="join" class="section join reveal">
-  <div class="join-mark">SE</div><div class="section-label">06 / JOIN SENPAI</div>
+  <div class="join-mark">SE</div><div class="section-label">08 / JOIN SENPAI</div>
   <h2>READY TO<br><em>LEVEL UP?</em></h2><p>Players. Creators. Staff. If you believe in the grind, there is a place for you.</p>
   <div class="join-actions"><a class="btn primary" href="mailto:business@senpaiesports.com?subject=Senpai%20Esports%20Application">APPLY TO SENPAI <span>→</span></a><a class="btn ghost" href="#contact">BUSINESS ENQUIRY <span>→</span></a></div>
 </section>
 </main>
 
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
 <footer id="contact" class="footer reveal">
   <div class="footer-top"><a class="brand footer-brand" href="#home"><img src="assets/senpai-logo.png" alt="Senpai Esports"></a><p>DISCIPLINE / PASSION / VICTORY</p>
   <div class="socials"><a href="#" aria-label="YouTube">YT</a><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Discord">DC</a><a href="#" aria-label="X">X</a></div></div>
