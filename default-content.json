@@ -1,0 +1,56 @@
+{
+  "owner": {
+    "name": "ADITYA SINHA",
+    "title": "FOUNDER & OWNER",
+    "established": "2023",
+    "photo": "assets/owner-aditya-sinha.jpg"
+  },
+  "contact": {
+    "email": "senpaiesprotss@gmail.com",
+    "phone": "9693157295"
+  },
+  "socials": {
+    "youtube": "https://www.youtube.com/@senpaiesportss",
+    "instagram": "https://www.instagram.com/senpai__esports",
+    "discord": "",
+    "x": ""
+  },
+  "hero": {
+    "eyebrow": "DISCIPLINE \u00d7 PASSION \u00d7 VICTORY",
+    "title": "WE ARE SENPAI",
+    "subtitle": "A competitive esports organization built on discipline, ambition and the obsession to become better every day."
+  },
+  "teams": [
+    {
+      "name": "BGMI",
+      "code": "BG",
+      "type": "MOBILE / BATTLE ROYALE",
+      "status": "ACTIVE",
+      "description": "COMPETITIVE DIVISION"
+    },
+    {
+      "name": "VALORANT",
+      "code": "VA",
+      "type": "PC / TACTICAL FPS",
+      "status": "COMING SOON",
+      "description": "COMING SOON"
+    },
+    {
+      "name": "FREE FIRE",
+      "code": "FF",
+      "type": "MOBILE / BATTLE ROYALE",
+      "status": "COMING SOON",
+      "description": "COMING SOON"
+    },
+    {
+      "name": "CREATORS",
+      "code": "CR",
+      "type": "MEDIA / COMMUNITY",
+      "status": "COMMUNITY",
+      "description": "COMMUNITY"
+    }
+  ],
+  "roster": [],
+  "tournaments": [],
+  "news": []
+}

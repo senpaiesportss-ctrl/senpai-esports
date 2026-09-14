@@ -1,0 +1,4 @@
+// Rename this file to supabase-config.js and paste your Supabase project values.
+// Never put a Supabase SERVICE ROLE key here. The anon/publishable key is intended for browser use.
+window.SENPAI_SUPABASE_URL = 'https://YOUR-PROJECT.supabase.co';
+window.SENPAI_SUPABASE_ANON_KEY = 'YOUR-PUBLISHABLE-ANON-KEY';
